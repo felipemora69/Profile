@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="staff.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mark-to-grade.html">Mark to Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sort-options">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+            <option value="nameAsc">Name &#9650;</option>
+            <option value="nameDesc">Name &#9660;</option>
+            <option value="salaryAsc">Salary &#9650;</option>
+            <option value="salaryDesc">Salary &#9660;</option>
+        </select>
+    </div>
+
+    <div id="staff-list" class="flex-container"></div>
+
+    <footer>
+        <p>Making the complex simple &copy; 2022, trojan69 Design</p>
+        <p>Calgary. Alberta, Canada
+        <br>From Bogotá D.C., Colombia</p>
+        <p id="current-date"></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
