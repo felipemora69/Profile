@@ -66,25 +66,30 @@ function convertMarkToGrade() {
             grade = "B";
         } else if (mark > 70) {
             grade = "C";
-        } else if (mark > 50) {
+        } else if (mark > 65) {
             grade = "D";
         } else {
             grade = "F";
         }
 
         // Display result message
-        document.getElementById("result-message").textContent = "Result: Grade " + grade;
+        var resultMessage = document.getElementById("result-message");
+        resultMessage.textContent = "Result: Grade " + grade;
+
+        // Apply green text color for grades more or equal to 65
+        resultMessage.style.color = (mark >= 65) ? "green" : "";
 
         // Clear validation message
         document.getElementById("validation-message").textContent = "";
     } else {
         // Display validation message for invalid input
         document.getElementById("validation-message").textContent = "Invalid mark. Please enter a number between 0 and 100.";
-        
+
         // Clear result message
         document.getElementById("result-message").textContent = "";
     }
 }
+
 
 /*---------- SECTION WEATHER --------------*/
 
