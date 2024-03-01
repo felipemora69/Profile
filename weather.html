@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mark-to-grade.html">Mark to Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--<section>
+        <img src="images/m-logo.png" alt="Felipe Mora" id="profile-picture">
+        <p> </p>
+    </section>-->
+    
+        <div id="converter-container">
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" placeholder="Enter temperature">
+            
+            <select id="conversionType">
+                <option value="celsiusToFahrenheit">°C to °F</option>
+                <option value="fahrenheitToCelsius">°F to °C</option>
+            </select>
+
+            <button id="convertBtn">Convert</button>
+
+            <div id="result-container">
+                <p><strong>Result:</strong></p>
+                <p id="convertedResult"></p>
+            </div>
+        </div>
+
+    <footer>
+        <p>Making the complex simple &copy; 2022, trojan69 Design</p>
+        <p>Calgary. Alberta, Canada
+        <br>From Bogotá D.C., Colombia</p>
+        <p id="current-date"></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
