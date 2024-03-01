@@ -79,3 +79,9 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    section p {
+        margin: 20px;
+    }
+}
