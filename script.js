@@ -1,3 +1,10 @@
+/*
+* @name: Assignement1
+* @Course Code: SODV1201
+* @class: Software Development Diploma program.
+* @author: Juan Felipe Mora Afanador.
+*/
+
 /* -------------SECTION HOME ----------------*/
 
 /*----------Displaying name's picture after 10 sg*/
@@ -211,7 +218,7 @@ $(document).ready(function () {
             // Display the result
             $('#convertedResult').text(`${result.toFixed(2)}°`);
         } else {
-            alert('Please enter a valid temperature.');
+            $('#convertedResult').text('Please enter a valid temperature.');
         }
     });
 });
