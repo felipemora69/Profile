@@ -1,7 +1,4 @@
 /*
-* @name: Assignement1
-* @Course Code: SODV1201
-* @class: Software Development Diploma program.
 * @author: Juan Felipe Mora Afanador.
 */
 
